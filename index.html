@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorpresa</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fef9f4;
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    #reveal {
+      display: none;
+      margin-top: 30px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    button {
+      font-size: 1.2rem;
+      padding: 12px 25px;
+      background-color: #ff715b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #e04e3f;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Hola amor! 💕</h1>
+  <p>Haz clic en el botón para ver tu sorpresa 🥰</p>
+  <button onclick="mostrar()">Ábreme</button>
+
+  <div id="reveal">
+    <h2>¡Nos vamos a Medellín! 🎉</h2>
+    <p>Del 30 de mayo al 2 de junio, para celebrar nuestro aniversario ❤️</p>
+    <img src="https://drive.google.com/file/d/1WAiQByEdr6CCqMzpo45_Mr65X-xLNQX-/view?usp=sharing" alt="Sorpresa Medellín">
+  </div>
+
+  <script>
+    function mostrar() {
+      document.getElementById('reveal').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
